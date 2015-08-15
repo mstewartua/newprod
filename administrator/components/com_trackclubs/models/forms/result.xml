@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_trackclubs/models/rules"
+	addfieldpath="/administrator/components/com_trackclubs/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="date_created"
+			type="hidden"
+		/>
+		<field
+			name="user_created"
+			type="hidden"
+		/>
+		<field
+			default=""
+			description=""
+			label="Athlete ID"
+			name="athleteid"
+			required="true"
+			type="hidden"
+			validate="athleteid"
+		/>
+		<field
+			default=""
+			description=""
+			label="Time"
+			name="time"
+			format="%Y-%m-%d"
+			type="calendar"
+		/>
+		<field
+			default="0"
+			description=""
+			label="DNF"
+			name="dnf"
+			required="true"
+			type="list"
+			validate="dnf">
+                    
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                </field>
+		<field
+			default=""
+			description=""
+			label="Place Override"
+			name="placeoverride"
+			type="hidden"
+		/>
+		<field
+			class="inputbox timepredecessor"
+			default=""
+			description=""
+			label="Time Predecessor"
+			name="timepredecessor"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox validate-hidepace"
+			default="0"
+			description=""
+			label="Hide Pace"
+			name="hidepace"
+			required="true"
+			size="40"
+			type="list"
+			validate="hidepace">
+                    
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                </field>
+	</fieldset>
+</form>

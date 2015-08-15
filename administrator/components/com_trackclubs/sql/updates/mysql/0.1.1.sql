@@ -1,0 +1,126 @@
+CREATE TABLE IF NOT EXISTS `#__trackclubs_trackclub` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `clubname` varchar(256) NOT NULL,
+  `published` varchar(256) NOT NULL,
+  `user_created` int(11) NOT NULL DEFAULT '0',
+  `user_modified` int(11) NOT NULL DEFAULT '0',
+  `date_created` DATETIME NOT NULL,
+  `date_modified` DATETIME NOT NULL,
+  `checked_out` int(11) NOT NULL,
+  `checked_out_time` DATETIME NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `#__trackclubs_race` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(256) NOT NULL,
+  `city` varchar(256) NOT NULL,
+  `state` varchar(256) NOT NULL,
+  `datetime` DATE NOT NULL,
+  `distance` varchar(256) NOT NULL,
+  `fees` TEXT NOT NULL DEFAULT '',
+  `director` varchar(256) NOT NULL,
+  `map` TEXT NOT NULL DEFAULT '',
+  `applicationfilename` varchar(256) NOT NULL,
+  `certifiedmap` varchar(256) NOT NULL,
+  `info` TEXT NOT NULL DEFAULT '',
+  `profile` int(11) NOT NULL DEFAULT '0',
+  `terrain` int(11) NOT NULL DEFAULT '0',
+  `route` int(11) NOT NULL DEFAULT '0',
+  `user_created` int(11) NOT NULL DEFAULT '0',
+  `user_modified` int(11) NOT NULL DEFAULT '0',
+  `date_created` DATETIME NOT NULL,
+  `date_modified` DATETIME NOT NULL,
+  `checked_out` int(11) NOT NULL,
+  `checked_out_time` DATETIME NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `#__trackclubs_result` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `athleteid` int(11) NOT NULL DEFAULT '0',
+  `time` DATE NOT NULL,
+  `dnf` int(11) NOT NULL DEFAULT '0',
+  `placeoverride` int(11) NOT NULL DEFAULT '0',
+  `timepredecessor` varchar(256) NOT NULL,
+  `user_created` int(11) NOT NULL DEFAULT '0',
+  `user_modified` int(11) NOT NULL DEFAULT '0',
+  `date_created` DATETIME NOT NULL,
+  `date_modified` DATETIME NOT NULL,
+  `checked_out` int(11) NOT NULL,
+  `checked_out_time` DATETIME NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `#__trackclubs_member` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `lastname` varchar(256) NOT NULL,
+  `firstname` varchar(256) NOT NULL,
+  `dob` DATE NOT NULL,
+  `gender` varchar(256) NOT NULL,
+  `photoid` varchar(256) NOT NULL,
+  `expirationdate` DATE NOT NULL,
+  `user_created` int(11) NOT NULL DEFAULT '0',
+  `user_modified` int(11) NOT NULL DEFAULT '0',
+  `date_created` DATETIME NOT NULL,
+  `date_modified` DATETIME NOT NULL,
+  `checked_out` int(11) NOT NULL,
+  `checked_out_time` DATETIME NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `#__trackclubs_athlete` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(256) NOT NULL,
+  `lastname` varchar(256) NOT NULL,
+  `age` int(11) NOT NULL DEFAULT '0',
+  `gender` varchar(256) NOT NULL,
+  `ttcnum` int(11) NOT NULL DEFAULT '0',
+  `user_created` int(11) NOT NULL DEFAULT '0',
+  `user_modified` int(11) NOT NULL DEFAULT '0',
+  `date_created` DATETIME NOT NULL,
+  `date_modified` DATETIME NOT NULL,
+  `checked_out` int(11) NOT NULL,
+  `checked_out_time` DATETIME NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `#__trackclubs_grouprun` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `runname` varchar(256) NOT NULL,
+  `runday` int(11) NOT NULL DEFAULT '0',
+  `runtime` DATE NOT NULL,
+  `runlocation` varchar(256) NOT NULL,
+  `runaddress` varchar(256) NOT NULL,
+  `rundescription` TEXT NOT NULL DEFAULT '',
+  `runcontact` varchar(256) NOT NULL,
+  `contactemail` varchar(256) NOT NULL,
+  `user_created` int(11) NOT NULL DEFAULT '0',
+  `user_modified` int(11) NOT NULL DEFAULT '0',
+  `date_created` DATETIME NOT NULL,
+  `date_modified` DATETIME NOT NULL,
+  `checked_out` int(11) NOT NULL,
+  `checked_out_time` DATETIME NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `#__trackclubs_workout` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(256) NOT NULL,
+  `owner` int(11) NOT NULL DEFAULT '0',
+  `workoutdatetime` varchar(256) NOT NULL,
+  `description` TEXT NOT NULL DEFAULT '',
+  `user_created` int(11) NOT NULL DEFAULT '0',
+  `user_modified` int(11) NOT NULL DEFAULT '0',
+  `date_created` DATETIME NOT NULL,
+  `date_modified` DATETIME NOT NULL,
+  `checked_out` int(11) NOT NULL,
+  `checked_out_time` DATETIME NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `#__trackclubs_workouttype` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(256) NOT NULL,
+  `description` TEXT NOT NULL DEFAULT '',
+  `user_created` int(11) NOT NULL DEFAULT '0',
+  `user_modified` int(11) NOT NULL DEFAULT '0',
+  `date_created` DATETIME NOT NULL,
+  `date_modified` DATETIME NOT NULL,
+  `checked_out` int(11) NOT NULL,
+  `checked_out_time` DATETIME NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;

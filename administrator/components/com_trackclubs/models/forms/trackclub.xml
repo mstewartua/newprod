@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_trackclubs/models/rules"
+	addfieldpath="/administrator/components/com_trackclubs/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="date_created"
+			type="hidden"
+		/>
+		<field
+			name="user_created"
+			type="hidden"
+		/>
+		<field
+			class="inputbox validate-clubname"
+			default=""
+			description=""
+			label="Clubname"
+			name="clubname"
+			required="true"
+			size="40"
+			type="text"
+			validate="clubname"
+		/>
+		<field
+			default=""
+			description=""
+			label="Published"
+			name="published"
+			type="hidden"
+		/>
+	</fieldset>
+</form>

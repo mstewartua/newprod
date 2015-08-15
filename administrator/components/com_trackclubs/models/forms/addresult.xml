@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_trackclubs/models/rules"
+	addfieldpath="/administrator/components/com_trackclubs/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="date_created"
+			type="hidden"
+		/>
+		<field
+			name="user_created"
+			type="hidden"
+		/>
+                <field
+			class="inputbox resultsfilename"
+                        name="resultsfilename"
+                        default=""
+			description=""
+			label="Results File"
+			type="filelist"
+                        directory="\images\results"
+		/>
+<!--		<field
+			class="inputbox validate-title"
+			default=""
+			description=""
+			label="Add Race Title"
+			name="title"
+			required="true"
+			size="40"
+			type="text"
+			validate="title"
+		/>
+		<field
+			class="inputbox city"
+			default=""
+			description=""
+			label="City"
+			name="city"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox state"
+			default=""
+			description=""
+			label="State"
+			name="state"
+			size="40"
+			type="text"
+		/>
+		<field
+			default=""
+			description=""
+			label="Datetime"
+			name="datetime"
+			format="%Y-%m-%d %H:%M"
+			type="calendar"
+		/>
+		<field
+			class="inputbox distance"
+			default=""
+			description=""
+			label="Distance"
+			name="distance"
+			size="40"
+			type="text"
+		/>
+		<field
+			default=""
+			description=""
+			label="Fees"
+			name="fees"
+			filter="safehtml"
+			width="300"
+			type="editor"
+		/>
+		<field
+			class="inputbox director"
+			default=""
+			description=""
+			label="Director"
+			name="director"
+			size="40"
+			type="text"
+		/>
+		<field
+			default=""
+			description=""
+			label="Map"
+			name="map"
+			rows="10"
+			cols="5"
+			type="textarea"
+		/>
+		<field
+			class="inputbox applicationfilename"
+                        name="applicationfilename"
+                        default=""
+			description=""
+			label="Applicationfilename"
+			type="filelist"
+                        directory="\images\apps"
+		/>
+		<field
+			class="inputbox validate-grandprix"
+			default="0"
+			description=""
+			label="Grandprix"
+			name="grandprix"
+			required="false"
+			size="40"
+			type="list"
+                        validate="grandprix">
+                    
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                </field>
+		<field
+			class="inputbox validate-certified"
+			default="0"
+			description=""
+			label="Certified"
+			name="certified"
+			required="false"
+			size="40"
+			type="list"
+                        validate="certified">
+                    
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                </field>
+		<field
+			class="inputbox certifiedmap"
+			default=""
+			description=""
+			label="Certifiedmap"
+			name="certifiedmap"
+			size="40"
+                        type="filelist"
+                        directory="\images\maps"
+		/>
+		<field
+			default=""
+			description=""
+			label="Info"
+			name="info"
+			filter="safehtml"
+			width="300"
+			type="editor"
+		/>
+		<field  name="profile" type="radio"
+			default="0"
+			description=""
+			label="Profile">
+                        	
+                        <option value="1">Flat</option>
+                        <option value="2">Hilly</option>
+                        <option value="3">Up hill</option>
+                        <option value="4">Down hill</option>
+                        <option value="0">Unknown</option>
+		</field>
+		<field
+			default="0"
+			description=""
+			label="Terrain"
+			name="terrain"
+			required="false"
+			type="radio">
+                    
+                        <option value="1">Road</option>
+                        <option value="2">Off-Road</option>
+                        <option value="3">Mixed Terrain</option>
+                        <option value="0">Unknown</option>
+		</field>
+		<field
+			default="0"
+			description=""
+			label="Route"
+			name="route"
+			required="false"
+			type="radio">
+                    
+                        <option value="1">Loop</option>
+                        <option value="2">Out and Back</option>
+                        <option value="3">Point to Point</option>
+                        <option value="0">Unknown</option>
+                </field>
+		<field
+			class="inputbox validate-aid"
+			default="0"
+			description=""
+			label="Aid"
+			name="aid"
+			required="true"
+			size="40"
+			type="radio">
+                    
+                        <option value="1">Aid</option>
+                        <option value="2">No Aid</option>
+                        <option value="0">Unknown</option>
+			
+                </field>
+		<field
+			class="inputbox validate-prize"
+			default="0"
+			description=""
+			label="Prize"
+			name="prize"
+			required="true"
+			size="40"
+			type="list"
+			validate="prize">
+                    
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                </field>
+		<field
+			class="inputbox validate-active"
+			default="1"
+			description=""
+			label="Active"
+			name="active"
+			required="true"
+			size="40"
+			type="list"
+                        validate="active">
+                    
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                </field>
+		<field
+			class="inputbox validate-complete"
+			default="0"
+			description=""
+			label="Complete"
+			name="complete"
+			required="true"
+			size="40"
+			type="list"
+			validate="complete">
+                        
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+		</field>-->
+	</fieldset>
+</form>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_trackclubs/models/rules"
+	addfieldpath="/administrator/components/com_trackclubs/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="date_created"
+			type="hidden"
+		/>
+		<field
+			name="user_created"
+			type="hidden"
+		/>
+		<field
+			class="inputbox firstname"
+			default=""
+			description=""
+			label="First Name"
+			name="firstname"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox lastname"
+			default=""
+			description=""
+			label="Last Name"
+			name="lastname"
+			size="40"
+			type="text"
+		/>
+		<field
+			default=""
+			description=""
+			label="Age"
+			name="age"
+			type="integer"
+                        first="1"
+                        last="100"
+                        step="1"
+		/>
+		<field
+			class="inputbox gender"
+			default=""
+			description=""
+			label="Gender"
+			name="gender"
+			size="40"
+			type="list">
+                
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+		</field>
+		<field
+			class="inputbox validate-active"
+			default="1"
+			description=""
+			label="Active"
+			name="active"
+			required="true"
+			size="40"
+			type="list"
+			validate="active">
+                    
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                </field>
+		<field
+			default=""
+			description=""
+			label="TTC Number"
+			name="ttcnum"
+			type="text"
+		/>
+	</fieldset>
+</form>

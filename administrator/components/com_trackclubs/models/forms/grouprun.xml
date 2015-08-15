@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_trackclubs/models/rules"
+	addfieldpath="/administrator/components/com_trackclubs/models/fields"
+>
+	<fieldset name="details">
+		<field
+			name="id"
+			type="hidden"
+		/>
+		<field
+			name="date_created"
+			type="hidden"
+		/>
+		<field
+			name="user_created"
+			type="hidden"
+		/>
+		<field
+			class="inputbox validate-runname"
+			default=""
+			description=""
+			label="Name"
+			name="runname"
+			required="true"
+			size="40"
+			type="text"
+                        validate="runname"
+                />
+		<field
+			default=""
+			description=""
+			label="Day of Week"
+			name="runday"
+                        type="list">
+                    
+                        <option value="1">Sunday</option>
+                        <option value="2">Monday</option>
+                        <option value="3">Tuesday</option>
+                        <option value="4">Wednesday</option>
+                        <option value="5">Thursday</option>
+                        <option value="6">Friday</option>
+                        <option value="7">Saturday</option>
+                </field>
+		<field
+			default=""
+			description="Enter a time in 24hr format. (hh:mm)"
+			label="Time (24hr format)"
+			name="runtime"
+			required="true"
+                        size="40"
+			type="text"
+			validate="runtime"
+		/>
+		<field
+			class="inputbox runlocation"
+			default=""
+			description=""
+			label="Location"
+			name="runlocation"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox runaddress"
+			default=""
+			description=""
+			label="Address"
+			name="runaddress"
+			size="40"
+			type="text"
+		/>
+		<field
+			default=""
+			description=""
+			label="Description"
+			name="rundescription"
+			filter="safehtml"
+			width="300"
+			type="editor"
+		/>
+		<field
+			class="inputbox runcontact"
+			default=""
+			description=""
+			label="Contact Name:"
+			name="runcontact"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox contactemail"
+			default=""
+			description=""
+			label="Contact Email Addres"
+			name="contactemail"
+			size="40"
+			type="text"
+		/>
+		<field
+			class="inputbox validate-active"
+			default="1"
+			description=""
+			label="Active"
+			name="active"
+			required="true"
+			size="40"
+			type="list"            
+                        validate="active">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                </field>
+		/>
+	</fieldset>
+</form>
